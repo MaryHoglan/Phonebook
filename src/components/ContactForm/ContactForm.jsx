@@ -3,7 +3,7 @@ import * as Yup from "yup";
 
 
 import { useId } from "react";
-import style from "./ContactForm.module.css";
+import css from "./ContactForm.module.css";
 
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations';
@@ -43,25 +43,25 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       validationSchema={FeedbackSchema}
     >
-      <Form className={style.form}>
-        <label className={style.label} htmlFor={nameFieldId}>
+      <Form className={css.form}>
+        <label className={css.label} htmlFor={nameFieldId}>
           Name
         </label>
-        <Field className={style.input} type="text" name="name" id={nameFieldId} />
-        <ErrorMessage className={style.error} name="name" component="span" />
+        <Field className={css.input} type="text" name="name" id={nameFieldId} />
+        <ErrorMessage className={css.error} name="name" component="span" />
 
-        <label className={style.label} htmlFor={numberFieldId}>
+        <label className={css.label} htmlFor={numberFieldId}>
           Number
         </label>
         <Field
-          className={style.input}
+          className={css.input}
           type="tel"
           inputMode="numeric"
           name="number"
           id={numberFieldId}
         />
-        <ErrorMessage className={style.error} name="number" component="span" />
-        <button className={style.btnAdd} type="submit">
+        <ErrorMessage className={css.error} name="number" component="span" />
+        <button className={css.btnAdd} type="submit">
           Add contact
         </button>
       </Form>

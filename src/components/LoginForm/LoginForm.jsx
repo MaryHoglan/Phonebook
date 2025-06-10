@@ -7,9 +7,9 @@ export default function LoginForm() {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, actions) => {
-    console.log("Submitting login:", values); // збережено консоль для дебагу
-    dispatch(login(values)); // виклик операції login
-    actions.resetForm(); // очищення форми
+    
+    dispatch(login(values)); 
+    actions.resetForm(); 
   };
 
   return (
