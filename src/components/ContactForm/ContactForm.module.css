@@ -40,20 +40,25 @@
 }
 
 
+
+
+
+
 .btnAdd {
     padding: 12px;
-    background-color: #A78BFA;
-    color: white;
-    font-size: 1rem;
-    border: none;
+    background-color: #1e1e1e;
+    color: #A78BFA;
+    font-size: 16px;
+    border: 1px solid #A78BFA;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .btnAdd:hover {
-    background-color: #6B4D8C;
-    
+    background-color: #A78BFA;
+    color: #121212;
+        transform: scale(1.05);
 }
 
 

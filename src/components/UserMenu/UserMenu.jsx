@@ -13,8 +13,10 @@ export default function UserMenu() {
 
   return (
     <div className={css.wrapper}>
-      <p className={css.username}>Welcome, {user.name}</p>
-      <button type="button" onClick={handleLogOut}>
+      <p className={css.username}>
+        Welcome, <span className={css.nameAccent}>{user.name}</span>
+      </p>
+      <button type="button" onClick={handleLogOut} className={css.button}>
         Logout
       </button>
     </div>

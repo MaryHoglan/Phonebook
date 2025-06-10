@@ -73,22 +73,27 @@
 
 
 
-
 .btnDelete {
-    background-color: #d63b3e;
-    color: #121212;
-    border: none;
-    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #d63b3e;
+    border: 1px solid #d63b3e;
     padding: 8px 14px;
-    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .btnDelete:hover {
-    background-color: #d04f51;
-    color: #f4e2e2;
+    background-color: #d63b3e;
+    color: #121212;
+    transform: scale(1.05);
 }
+
+
+
+
+
 
 .icon {
    

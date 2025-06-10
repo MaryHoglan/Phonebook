@@ -1,17 +1,38 @@
+
+
+
 .authNav {
     display: flex;
-    gap: 12px;
+    gap: 20px;
+    align-items: center;
 }
 
 .link {
-    color: #2dd4bf;
-    font-weight: bold;
+    color: #a0a0a0;
     text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 4px 0;
     transition: color 0.3s ease;
 }
 
-.link:hover,
-.link.active {
-    color: #14b8a6;
-    text-decoration: underline;
+.link:hover {
+    color: #2dd4bf;
+   
+}
+
+.active {
+    color: #2dd4bf;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #2dd4bf;
+    
+    border-radius: 2px;
 }
