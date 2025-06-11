@@ -4,8 +4,9 @@ import ContactList from "../../components/ContactList/ContactList";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchContacts } from "../../redux/contacts/operations";
-import { selectIsLoading, selectError } from "../../redux/contacts/slice";
+import { selectIsLoading, selectError } from "../../redux/contacts/selectors";
 import css from "./ContactsPage.module.css"
+
 
 export default function ContactsPage() {
   const dispatch = useDispatch();

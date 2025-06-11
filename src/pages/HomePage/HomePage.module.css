@@ -9,9 +9,10 @@
     color: #e0e0e0;
     text-align: center;
 }
- .phonebook{
+
+.phonebook {
     color: #a78bfa;
- }
+}
 
 .typing {
     overflow: hidden;
@@ -19,7 +20,6 @@
     border-right: 2px solid #fcd34d;
     animation: typing 3s steps(30) forwards, blink 0.8s infinite;
 }
-
 
 @keyframes typing {
     from {
@@ -37,7 +37,6 @@
     }
 }
 
-
 .title {
     font-size: 3rem;
     color: #fcd34d;
@@ -47,7 +46,6 @@
     width: fit-content;
 }
 
-
 .text {
     font-size: 1.25rem;
     color: #2dd4bf;
@@ -56,6 +54,7 @@
     display: inline-block;
     width: fit-content;
 }
+
 .highlight {
     font-weight: bold;
     color: #c7f8f2;
@@ -65,7 +64,24 @@
     font-size: 55px;
     color: #fcd34d;
     margin-left: 8px;
-    
     vertical-align: middle;
-    
+}
+
+/* 🔽 Адаптация ТОЛЬКО шрифта для мобильных */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .typing {
+        font-size: 0.93rem;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
 }
